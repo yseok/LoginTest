@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuseok.android.logintest.MainActivity">
+
+    <TextView
+        android:text="이메일이 검증되지 않았습니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCheck"
+        android:background="#ff0803"
+        android:textColor="#ffffffff"
+        android:visibility="gone"
+        android:textSize="25dp" />
+
+    <TextView
+        android:text="* 이메일이 올바르지 않습니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:id="@+id/textEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editEmail"
+        android:hint="Email"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editPw"
+        android:hint="Password" />
+
+    <TextView
+        android:text="* 비밀번호가 올바르지 않습니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:id="@+id/textPw" />
+
+    <Button
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignin" />
+
+    <Button
+        android:text="Sign up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignup" />
+</LinearLayout>
